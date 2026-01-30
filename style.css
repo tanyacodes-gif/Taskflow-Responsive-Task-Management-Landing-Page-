@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+/* HERO */
+.hero {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #00ff88;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* SECTION BASE */
+section {
+    padding: 50px 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* TASK INPUT */
+.task-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.task-box input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+}
+
+.task-box button {
+    padding: 12px 20px;
+    background-color: #00ff88;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* HEADINGS */
+h2 {
+    color: #00ff88;
+    margin-bottom: 15px;
+}
+
+/* TODO LIST */
+#taskList {
+    list-style: none;
+}
+
+#taskList li {
+    background-color: #111;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #00ff88;
+    border-radius: 6px;
+}
+
+/* DEADLINES */
+.deadline {
+    background-color: #111;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.red {
+    color: red;
+    border-left: 4px solid red;
+}
+
+.green {
+    color: #00ff88;
+    border-left: 4px solid #00ff88;
+}
+
+/* PROGRESS */
+.progress-section {
+    text-align: center;
+}
+
+.progress-section p {
+    font-size: 13px;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #111;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .task-box {
+        flex-direction: column;
+    }
+}

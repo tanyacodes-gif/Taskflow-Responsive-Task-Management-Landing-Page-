@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>TaskFlow</h1>
+        <p>Plan better. Finish faster. Stay stress-free.</p>
+    </section>
+
+    <!-- TASK INPUT -->
+    <section class="task-input-section">
+        <h2>Add a Task</h2>
+        <div class="task-box">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button onclick="addTask()">Add</button>
+        </div>
+    </section>
+
+    <!-- TODO LIST -->
+    <section class="todo-section">
+        <h2>To-Do List</h2>
+        <ul id="taskList"></ul>
+    </section>
+
+    <!-- DEADLINE ALERTS -->
+    <section class="deadline-section">
+        <h2>Deadline Alerts</h2>
+
+        <div class="deadline red">
+            🔴 DSA Assignment <span>26 Jan</span>
+        </div>
+
+        <div class="deadline red">
+            🔴 DBMS Lab File <span>28 Jan</span>
+        </div>
+
+        <div class="deadline green">
+            🟢 Portfolio Submission <span>30 Jan</span>
+        </div>
+    </section>
+
+    <!-- PROGRESS -->
+    <section class="progress-section">
+        <h2>Visual Progress</h2>
+        <canvas id="progressChart" width="220" height="220"></canvas>
+        <p>Completed vs Pending Tasks</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2026 TaskFlow
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
